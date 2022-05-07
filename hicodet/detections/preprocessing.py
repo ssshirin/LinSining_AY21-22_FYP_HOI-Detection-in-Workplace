@@ -1,12 +1,3 @@
-"""
-Run Faster R-CNN with ResNet50-FPN on HICO-DET
-
-Fred Zhang <frederic.zhang@anu.edu.au>
-
-The Australian National University
-Australian Centre for Robotic Vision
-"""
-
 import os
 import json
 import torch

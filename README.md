@@ -33,7 +33,7 @@ Download checkpoints for Spatially-Conditionally-Graph model pretrained on HICO-
 
 ## 2. HIFO dataset
 
-Download the dataset from [HIFO_data](https://drive.google.com/drive/folders/1wOKlJ9BZeyU78wucRgQ16fmr-QHPGYVZ?usp=sharing). HIFO dataset consists of 1174 images with following classes:
+Download the dataset from [HIFO_data](https://drive.google.com/drive/folders/1wOKlJ9BZeyU78wucRgQ16fmr-QHPGYVZ?usp=sharing) and move it under "hicodet/detection" HIFO dataset consists of 1174 images with following classes:
 
 | Object Class | HOI Class |
 | ---- | ---- |

@@ -1,13 +1,3 @@
-"""
-Fine-tune Faster R-CNN on HICO-DET
-
-Fred Zhang <frederic.zhang@anu.edu.au>
-
-The Australian National University
-Australian Centre for Robotic Vision
-"""
-
-#from msilib.schema import Error
 import os
 import math
 import json
@@ -277,13 +267,11 @@ def main(args):
 
     train2015 = HICODetObject(HICODet(
         root=os.path.join(args.data_root, "hifo_data/images/train"),
-        #root=os.path.join(args.data_root, "hico_20160224/images/train"),
         anno_file=os.path.join(args.data_root, "instances_train.json"),
         target_transform=pocket.ops.ToTensor(input_format='dict')
     ), data_root=args.data_root, random_flip=True)
     test2015 = HICODetObject(HICODet(
         root=os.path.join(args.data_root, "hifo_data/images/test"),
-        #root=os.path.join(args.data_root, "hico_20160224/images/test"),
         anno_file=os.path.join(args.data_root, "instances_test.json"),
         target_transform=pocket.ops.ToTensor(input_format='dict')
     ), data_root=args.data_root)
@@ -346,7 +334,7 @@ def main(args):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description="Fine-tune Faster R-CNN on HIFO")
-    parser.add_argument('--data-root', type=str, default='/home/students/s121md105_02/spatially-conditioned-graphs/hicodet')
+    parser.add_argument('--data-root', type=str, default='../')
     parser.add_argument('--training-data', nargs='+', default=['train'], type=str)
     parser.add_argument('--num-epochs', default=15, type=int)
     parser.add_argument('--random-seed', default=1, type=int)

@@ -2,7 +2,7 @@
 
 ### Human-Object Interaction (HOI) Detection in Workplace
 
-The project applied transfer Learning using Spatially Conditioning Graph (SCG) model pre-trained on HICO-DET. SCG model is a two-stage HOI detection model. It utilises off-the-shelf object detection model in the first stage to generate the human and object instances. Then, the instances are used as the inputs for HOI classification in the second stage. More information about SCG model can be found on [GitHub-Spatially-Conditionally-Graph](https://github.com/fredzzhang/spatially-conditioned-graphs).
+The project applied transfer Learning using Spatially Conditioning Graph (SCG) model pre-trained on HICO-DET. SCG model is a two-stage HOI detection model. It utilises off-the-shelf object detection model in the first stage to generate the human and object instances. Then, the instances are used as the inputs for HOI classification in the second stage. More information about SCG model can be found on [fredzzhang-Spatially-Conditionally-Graph](https://github.com/fredzzhang/spatially-conditioned-graphs).
 
 To extend HOI detection application to factory workplace, a new industrial dataset,Human Interaction with Factory Objects (HIFO) dataset, was built to introduce 9 new interaction classes fthat common for the context.
 
